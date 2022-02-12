@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.article_container {
+    flex: 0 0 33%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 25px;
+}
+
+.article {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prop {
+    display: block;
+}
+
+.res {
+    font-size: 15px;
+    max-width: 100px;
+    word-wrap: break-word;
+}
+
+.article > .delete-article {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    background: rgb(221, 0, 0);
+    position: relative;
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px black;
+    border: none;
+    outline: 0;
+}
+
+.article > .delete-article:hover {
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+}
+
+.article_create {
+    flex: 0 0 33%;
+} 
+
+.article_create > form,
+.article_update > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.article_create > p,
+.article_update > p {
+    margin-top: 15px;
+    text-align: center;
+}
