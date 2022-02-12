@@ -19,7 +19,7 @@ app.use('/', articleRouter);
 
 
 
-app.listen(PORT, async () => {
+app.listen(process.env.PORT || PORT, async () => {
     console.log(`port ${PORT}`);
     try {
         await sequelize.authenticate();
